@@ -1,0 +1,80 @@
+Data Mining 
+
+Homework 1 
+Everyone has to do this HW individually. 
+Starting HW2, you can work in groups of at most 3
+
+Additional Files on canvas: 
+1)	MLwR_v2_02.r
+2)	usedcars.csv
+
+You will learn the basics of R, the main statistical tool we will be using in this course. Please follow this homework and take this seriously or you will fall behind the class and it will be very hard for you to follow the class. Please start early.
+
+Learn the basics of R & set up R (25 PTS) – Opt-out for R experts below.
+(Will approximately take 1-1.5 hours) 
+
+1)	Go to https://www.codeschool.com/
+2)	Create an id – you will need to tell us this ID.
+3)	Complete the course tryr. <tryr.codeschool.com>
+4)	Go to your profile and make your profile public 
+5)	Also, take a screenshot clearly showing www.codeschoolcom/users/”yourusername” and the following R tutorial achievement.
+ 
+
+
+
+OPT-OUT FOR R GURUS: If you already know R, instead of going through the tutorial, do the following. If you do not know R, I strongly advise you to go through the tutorial since this will take longer for those new to R and it’s in your best interest to learn R for the course.
+
+1.	List 3 things about R that you hate and 3 things that you like and explain.
+2.	Choose one alternative statistical tool such as SAS/Stata/Matlab/Excel/etc and explore how R differs from that language by giving specific Pros and Cons. Write at least 200 words. 
+
+Find Articles on Data Mining / Machine Learning in Business (25 PTS)   
+1)	On Canvas Discussion Section: Post 1 recent industry applications of data mining or machine learning that you find interesting (link and title). You may find stories on websites like KDNuggets, Data Science Central, Mashable, TechChrunch, etc. You can look at the syllabus for more information on where to find interesting articles.
+2)	Give a paragraph summary of the article.
+3)	For the example you have posted, name specific task or subtask discussed in the article then explain what type of data mining / data science techniques are used to achieve this task (Write up both on Discussion AND here on homework).  
+4)	Is the example supervised learning, unsupervised learning, or can be both? Explain (Write up both on Discussion AND here on homework).  
+5)	Go through the posts others have posted and “comment” at least twice.
+
+Find Dataset (25 PTS)   
+You are to spend at least 3 hours searching online for a unique “course-companion” dataset that you would like to spend time analyzing and studying throughout the course. It can be any type of data in any subject or field. The point is that you should be interested in it yourself and have a passion to understand it for whatever the reason (financial reasons are fine). Spend a good amount of time thinking and searching for the dataset you would be passionately interested in. Please avoid a common dataset or easily searchable dataset (e.g., NO KAGGLE DATASET allowed). This will help you in the long run for final project and when you interview for a job position. Historically, students have looked into all types of data such as real estate, educational, sports, betting, financial, forum, medical, private company data, family business data, etc. Give a half page overview of the data.
+I will select top 3 datasets, which will receive an extra credit of 30 points in this homework (this will carry over to the final grade). 
+
+Install R in your machine and RStudio as an IDE (Integrated Development Environment) 
+1)	Install R from https://www.r-project.org/
+2)	Install RStudio from https://www.rstudio.com/products/rstudio/
+a.	You can go through this tutorial on installing and basics of RStudio here http://web.cs.ucla.edu/~gulzar/rstudio/index.html
+b.	Skim through intro to RStudio http://dss.princeton.edu/training/RStudio101.pdf
+
+Read Chapter 1 and 2 of MLWR (Machine Learning with R 2nd ed by Lantz) (25 PTS)
+This is meant to familiarize yourself with R by running basic linear regression that you should be familiar already.
+All the R codes for this book can be found here https://www.packtpub.com/books/content/support/21990 Or at https://github.com/dataspelunking/MLwR/ 
+Go through the code for chapter 2 – “MLwR_v2_02.r” on Canvas. Load “usedcars.csv”
+Then answer the following questions
+1)	Name the columns of the data and the data type
+2)	What’s the average price of the used car? Average mileage? 
+3)	Provide the Scatterplot of Price vs Mileage. Label the axis appropriately.
+4)	Provide the histogram of Price. Label the axis appropriately.
+5)	Run linear regression of Price against everything else (Price as Y, everything else as Xs). Then provide the results. 
+6)	Based on the linear regression results, can you guess which of the available car model (SE, SEL, SES) is the best model? Why? Explain this with coefficients from linear model from above.
+
+Few Notes Regarding R: 
+1)	In R, “?functionname” gives you details on the function.  Try ?help
+2)	Make sure that your R working directory is set correctly. “getwd()” gets your current working directory. You have to use “setwd()” to set the location of working directory to the directory in which the R code (MLwR_v2_02.r) and the csv file (usedcars.csv) reside.
+3)	R has many libraries or functions that are not installed in the main distribution. You can easily install those packages by name. In the code example, you’ll need to use “gmodels” library. Without installing, you may get this error message. 
+
+> library(gmodels)
+Error in library(gmodels) : there is no package called ‘gmodels’ 
+To install, simply type:
+install.packages('gmodels', dependencies=T)
+
+It will install all the required dependent packages and the gmodels package itself. 
+
+Few Tips When R Is Not Working
+•	See if you are in the right working directory
+•	Make sure R is the latest version
+•	Use Head() to see if data has been called in correctly
+•	Make sure you have the library installed
+•	Make sure you have the library called
+•	Missing values, “NA”, could be an issue, get rid of them or deal with them e.g., complete.cases()
+•	Make sure the data type is correct
+•	Make sure your environment is not messed up (variable of same name) – just restart it without saving the “workspace” AKA memory
+
